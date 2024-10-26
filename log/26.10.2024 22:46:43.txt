@@ -87,64 +87,10 @@
 [BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:start.
 [CN]/system/Header/Program/Server`1/server:State:change state. current state ListenSSL
 [CN]/system/Header/Program/Server`1/server:State:running
-[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
-[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:38200
-[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.138200]
-[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:start construction ...
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:end construction.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:start configurate ...
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:end configurate.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:starting ...
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change state. current state None
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change of state None -> LoadingData
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:loading data ...
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:LoadingData call
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:Agent:Read:Start
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:Agent:Write:Start
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:start.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:Agent:Read:Message:Authorization
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change state. current state LoadingData
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change of state LoadingData -> WriteInitializeData
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:Client:start authorization
-[CN]/system/Header/Program/Server`1/server:Get login data
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:creating tcp listener. RemoveAddress:127.0.0.1, Key:17
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:CreatingTCPListener call
-[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.138200 ожидающий новое TCP подключение по ключу 17
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:17). Отправим запрос клиенту
-[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change state. current state WriteInitializeData
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State.Change call
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:Отправка сообщение с запросом на tcp соединение.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change state. current state CreatingWaitTcpConnection
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:SSLWrite.RequestTcpConnection call
-[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
-[CN]/system/Header/Program/Server`1/server:check tcp key call success
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:start construction ...
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:end construction.
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:starting ...
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:start.
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:По tcp соединению пришел ключ 17, проверим ожидается ли соединение с таким ключом
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:127.0.0.1 ожидает соединения.Поступивший ключ 17 совподает с ожидаемым. Продолжим установление соединения ...
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:Check key for tcp connection call.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:creating tcp listener ...
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change state. current state RequestTCPConnection
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:State:change of state RequestTCPConnection -> ReceivedTCPKey
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:CreatingTCPListener call
-[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:36314:destroyed.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:Проверка на установление tcp соединение:tcp соединение установлено.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:CreatingTCPListener->checkTcpConnection call
 [CN]/system/Header/Program/program:start destruction ...
 [CN]/system/Header/Program/program:end destruction.
 [CN]/system/Header/Program/Server`1/server:start destruction ...
 [CN]/system/Header/Program/Server`1/server:end destruction.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:start destruction ...
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:end destruction.
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:stopping ...
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:stop
-[BN]/system/Header/Program/Server`1/Agent/127.0.0.138200:destroyed.
 [CN]/system/Header/Program/Server`1/server:stopping ...
 [CN]/system/Header/Program/Server`1/server:stop
 [CB]/system/Header/Program/Server`1/SSLShield/SSLListener:start destruction ...

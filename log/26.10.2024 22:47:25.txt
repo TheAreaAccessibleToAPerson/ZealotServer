@@ -1,0 +1,541 @@
+[CN]/system/Header/Program:success creating program object.
+[CN]/system/Header/Program/program:start construction ...
+[CN]/system/Header/Program/program:end construction.
+[CN]/system/Header/Program/program:start configurate ...
+[CN]/system/Header/Program/program:[MongoDB]SuccsessConnectionDefine[Настройки подключения успешно заданы mongodb://localhost:27017]
+[CN]/system/Header/Program/program:[MongoDB]SuccsessDefine[Подключение создано mongodb://localhost:27017]
+[CN]/system/Header/Program/program:end configurate.
+[CN]/system/Header/Program/program:starting ...
+[CN]/system/Header/Program/program:start.
+[CN]/system/Header/Program/Server`1/server:start construction ...
+[CN]/system/Header/Program/Server`1/server:end construction.
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:start construction ...
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:end construction.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:start construction ...
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:end construction.
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:start configurate ...
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:Из файла data/SSLServerData.txt был получен адрес и порт удаленого сервера для tcp соединения 127.0.0.1:55001
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:end configurate.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:start configurate ...
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:Из файла data/TCPServerData.txt был получен адрес и порт удаленого сервера для tcp соединения 127.0.0.1:55000
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:end configurate.
+[CN]/system/Header/Program/Server`1/server:start configurate ...
+[CN]/system/Header/Program/Server`1/server:База данныx ServerAgent:DB уже создана.
+[CN]/system/Header/Program/Server`1/server:Коллекция [ServerAgent:DB:Collection] в базе данных [ServerAgent:DB] уже создана.
+[CN]/system/Header/Program/Server`1/server:[MongoDB|mongodb://localhost:27017]Вы получили BsonDocument в количесве 0
+[CN]/system/Header/Program/Server`1/server:success configurate initialize client from DB
+[CN]/system/Header/Program/Server`1/server:end configurate.
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:starting ...
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:start.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:starting ...
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:start.
+[CN]/system/Header/Program/Server`1/server:starting ...
+[CN]/system/Header/Program/Server`1/server:start.
+[CN]/system/Header/Program/Server`1/server:State:change state. current state None
+[CN]/system/Header/Program/Server`1/server:State:change of state None -> LoadingData
+[CN]/system/Header/Program/Server`1/server:loading data ...
+[CN]/system/Header/Program/Server`1/server:State:change state. current state LoadingData
+[CN]/system/Header/Program/Server`1/server:State:change of state LoadingData -> ListenTCP
+[CN]/system/Header/Program/Server`1/server:State:to initialize tcp
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:server Передал интерфейс для получения входящих tcp подключений.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:creating object ShieldTCPListener
+[CN]/system/Header/Program/Server`1/server:LoadingData call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:start construction ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:end construction.
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:start configurate ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:start setting ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:client receive message initialize.
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:end setting.
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:setting success
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:starting bind server Address:127.0.0.1:55000
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:binding ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:bind.
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Bind call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:connection success
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:end configurate.
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:starting ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:send message: start listener clients.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:success start listen clients
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:Оповестим о начале прослушивания ssl подключений.
+[CN]/system/Header/Program/Server`1/server:TCPShield end initilize
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:SuccessConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:start.
+[CN]/system/Header/Program/Server`1/server:State:change state. current state ListenTCP
+[CN]/system/Header/Program/Server`1/server:State:change of state ListenTCP -> ListenSSL
+[CN]/system/Header/Program/Server`1/server:State:to initialize ssl
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:server Передал интерфейс для получения входящих ssl подключений.
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:creating object ShieldSSLListener
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:start construction ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:end construction.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:start configurate ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:start setting ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:client receive message initialize.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:end setting.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:setting success
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:starting bind server Address:127.0.0.1:55001
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:binding ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:bind.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Bind call
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:connection success
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:end configurate.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:starting ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:send message: start listener clients.
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:success start listen clients
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:Оповестим о начале прослушивания ssl подключений.
+[CN]/system/Header/Program/Server`1/server:SSLShield end initilize
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:SuccessConnection call
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:start.
+[CN]/system/Header/Program/Server`1/server:State:change state. current state ListenSSL
+[CN]/system/Header/Program/Server`1/server:State:running
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:50444
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.150444]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:creating tcp listener. RemoveAddress:127.0.0.1, Key:17
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.150444 ожидающий новое TCP подключение по ключу 17
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:17). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:По tcp соединению пришел ключ 17, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:127.0.0.1 ожидает соединения.Поступивший ключ 17 совподает с ожидаемым. Продолжим установление соединения ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:creating tcp listener ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:CreatingTCPListener call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Был получен tcp socket
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Был получен tcp socket
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change state. current state RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:State:change of state RequestTCPConnection -> ReceivedTCPKey
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40306:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:Проверка на установление tcp соединение:tcp соединение установлено.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:40570
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.140570]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:creating tcp listener. RemoveAddress:127.0.0.1, Key:20
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.140570 ожидающий новое TCP подключение по ключу 20
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:20). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:По tcp соединению пришел ключ 20, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:Никто из клиентов не ожидает поступившего ключа 20 от 127.0.0.1
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54974:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:Проверка на установление tcp соединение:неудалось установить tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140570:destroyed.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:34480
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.134480]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:creating tcp listener. RemoveAddress:127.0.0.1, Key:22
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.134480 ожидающий новое TCP подключение по ключу 22
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:22). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:По tcp соединению пришел ключ 22, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:Никто из клиентов не ожидает поступившего ключа 22 от 127.0.0.1
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:40046:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:Проверка на установление tcp соединение:неудалось установить tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.134480:destroyed.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:49756
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.149756]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:creating tcp listener. RemoveAddress:127.0.0.1, Key:24
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.149756 ожидающий новое TCP подключение по ключу 24
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:24). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:По tcp соединению пришел ключ 24, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:Никто из клиентов не ожидает поступившего ключа 24 от 127.0.0.1
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:59154:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:Проверка на установление tcp соединение:неудалось установить tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.149756:destroyed.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:40222
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.140222]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:creating tcp listener. RemoveAddress:127.0.0.1, Key:26
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.140222 ожидающий новое TCP подключение по ключу 26
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:26). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:Ожидаем сообщение  mill 0.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:По tcp соединению пришел ключ 26, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:Никто из клиентов не ожидает поступившего ключа 26 от 127.0.0.1
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:60406:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:Проверка на установление tcp соединение:неудалось установить tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.140222:destroyed.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:59062
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.159062]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:creating tcp listener. RemoveAddress:127.0.0.1, Key:28
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.159062 ожидающий новое TCP подключение по ключу 28
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:28). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:Ожидаем сообщение  mill 0.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:По tcp соединению пришел ключ 28, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:Никто из клиентов не ожидает поступившего ключа 28 от 127.0.0.1
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:48418:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:Проверка на установление tcp соединение:неудалось установить tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.159062:destroyed.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:35520
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.135520]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:creating tcp listener. RemoveAddress:127.0.0.1, Key:30
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.135520 ожидающий новое TCP подключение по ключу 30
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:30). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:Ожидаем сообщение  mill 1.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:По tcp соединению пришел ключ 30, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:Никто из клиентов не ожидает поступившего ключа 30 от 127.0.0.1
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:54306:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:Проверка на установление tcp соединение:неудалось установить tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.135520:destroyed.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:New ssl client Address:127.0.0.1, Port:46056
+[CN]/system/Header/Program/Server`1/server:creating object Agent[Key:127.0.0.146056]
+[CN]/system/Header/Program/Server`1/server:SSLShield.IListen.Listen call success
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:start construction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:end construction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:start configurate ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:end configurate.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:starting ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change state. current state None
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change of state None -> LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:loading data ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:LoadingData call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:Agent:SSLRead:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:Agent:SSLWrite:Start
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:start.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:Agent:SSLRead:Message:Authorization
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change state. current state LoadingData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change of state LoadingData -> WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:Client:start authorization
+[CN]/system/Header/Program/Server`1/server:Get login data
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:creating tcp listener. RemoveAddress:127.0.0.1, Key:32
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:CreatingTCPListener call
+[CN]/system/Header/Program/Server`1/server:Добавлен клиент 127.0.0.146056 ожидающий новое TCP подключение по ключу 32
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:Данные для поключения tcp соединения были добавлены на Server(RemoteAddress:127.0.0.1, Key:32). Отправим запрос клиенту
+[CN]/system/Header/Program/Server`1/server:CreatingWaitTCPConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change state. current state WriteInitializeData
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change of state WriteInitializeData -> CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State.Change call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:Отправка сообщение с запросом на tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change state. current state CreatingWaitTcpConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:State:change of state CreatingWaitTcpConnection -> RequestTCPConnection
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:SSLWrite.RequestTcpConnection call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:Accept tcp client
+[CN]/system/Header/Program/Server`1/server:check tcp key call success
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:start construction ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:end construction.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:starting ...
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:start.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:По tcp соединению пришел ключ 32, проверим ожидается ли соединение с таким ключом
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:Никто из клиентов не ожидает поступившего ключа 32 от 127.0.0.1
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:Check key for tcp connection call.
+[BN]/system/Header/Program/Server`1/ReceiveTCPKey/ReceiveTCPKey:127.0.0.1:51444:destroyed.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:Проверка на установление tcp соединение:неудалось установить tcp соединение.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:CreatingTCPListener->checkTcpConnection call
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.146056:destroyed.
+[CN]/system/Header/Program/program:start destruction ...
+[CN]/system/Header/Program/program:end destruction.
+[CN]/system/Header/Program/Server`1/server:start destruction ...
+[CN]/system/Header/Program/Server`1/server:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:start destruction ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:end destruction.
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:stopping ...
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:stop
+[BN]/system/Header/Program/Server`1/Agent/127.0.0.150444:destroyed.
+[CN]/system/Header/Program/Server`1/server:stopping ...
+[CN]/system/Header/Program/Server`1/server:stop
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:start destruction ...
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:end destruction.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:start destruction ...
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:end destruction.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:start destruction ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:send impuls: stop listen clients.
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:StopListner don't call
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:end destruction.
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:stopping ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:stop
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:start destruction ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:send impuls: stop listen clients.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:StopListner don't call
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:end destruction.
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:stopping ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:stop
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:start destroyed ...
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:stop listener
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:listener set null
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:stop listener success
+[BN]/system/Header/Program/Server`1/SSLShield/Content/ShieldSSLListener:end destroyed.
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:start destroyed ...
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:stop listener
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:listener set null
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:stop listener success
+[BN]/system/Header/Program/Server`1/TCPShield/Content/ShieldTCPListener:end destroyed.
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:stopping ...
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:stop
+[CB]/system/Header/Program/Server`1/SSLShield/SSLListener:destroyed.
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:stopping ...
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:stop
+[CB]/system/Header/Program/Server`1/TCPShield/TCPListener:destroyed.
+[CN]/system/Header/Program/Server`1/server:destroyed.
+[CN]/system/Header/Program/Server`1/server:State:stopping
+[CN]/system/Header/Program/program:stopping ...
+[CN]/system/Header/Program/program:stop
+[CN]/system/Header/Program/program:destroyed.
