@@ -4,7 +4,8 @@ using Butterfly;
 
 namespace Zealot.client.agent
 {
-    public class Controller : Butterfly.Controller.Board.LocalField<Setting>, IClient, Data.IClient
+    public class Controller : Butterfly.Controller.Board.LocalField<Setting>, IClient, State.IClient,
+    Data.IClient
     {
         protected Data Data { set; get; }
         protected State State { set; get; }
@@ -15,7 +16,7 @@ namespace Zealot.client.agent
 
         public const string NAME = "Agent";
 
-        void IClient.LoadingData()
+        void State.IClient.LoadingData()
         {
             if (try_fly(() =>
             {
@@ -54,12 +55,15 @@ namespace Zealot.client.agent
 
                                     invoke_event(() =>
                                     {
+                                        // Во втором try_fly заблокируется lock текущего обьекта.
                                         if (try_fly(SSLWrite.RequestTCPConnection) && try_fly(State.Change))
                                         {
                                             Logger.S_I.To(this, $"SSLWrite.RequestTcpConnection call");
 
                                             invoke_event(() =>
                                             {
+                                                // Удалим данные.
+
                                                 if (try_fly(() =>
                                                 {
                                                     // Если от клиента так и непоступило tcp соединение, 
@@ -109,23 +113,39 @@ namespace Zealot.client.agent
 
         protected void EndTcpListener(object socket)
         {
-            if (try_fly(() =>
+            invoke_event(() =>
             {
-                Logger.S_I.To(this, "creating tcp listener ...");
-
-                invoke_event(() =>
+                if (try_fly(() =>
                 {
-                    TCPWrite.SetSocket(socket);
-                    TCPRead.SetSocket(socket);
+                    Logger.S_I.To(this, "creating tcp listener ...");
+
+                    TCPWrite.Start(socket);
+                    TCPRead.Start(socket);
 
                     State.Change();
-                },
-                Event.SYSTEM);
-            }))
-            {
-                Logger.S_I.To(this, "CreatingTCPListener call");
-            }
-            else Logger.S_I.To(this, "CreatingTCPListener don't call");
+                }))
+                {
+                    Logger.S_I.To(this, "CreatingTCPListener call");
+                }
+                else Logger.S_I.To(this, "CreatingTCPListener don't call");
+            },
+            Event.SYSTEM);
+        }
+
+        protected void Stopping()
+        {
+            SSLRead.Stop();
+            SSLWrite.Stop();
+            TCPRead.Stop();
+            TCPWrite.Stop();
+        }
+
+        protected void Closing()
+        {
+            SSLRead.Close();
+            SSLWrite.Close();
+            TCPRead.Close();
+            TCPWrite.Close();
         }
     }
 }

@@ -157,7 +157,7 @@ namespace Zealot.client.agent.ssl
         {
             if (_isRunning)
             {
-                Logger.S_E.To(_client, $"Перед вызовом Close нужно вызвать метод Stop()");
+                Logger.S_E.To(_client, $"{NAME}:Перед вызовом Close нужно вызвать метод Stop()");
 
                 _client.destroy();
 

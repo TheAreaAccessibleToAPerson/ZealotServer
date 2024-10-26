@@ -98,8 +98,6 @@ namespace Zealot.server
         /// </summary>
         void TCPShield.IListen.Listen(Socket value)
         {
-            SystemInformation("NEW TCP");
-
             invoke_event(() =>
             {
                 if (ServerHellper.GetAddressAndPort(value, out string address, out int port, out string info))
@@ -132,7 +130,6 @@ namespace Zealot.server
                 }
             },
             Event.SERVER_CLIENT_WORK);
-
         }
 
         public static bool TryTCPKey(Socket client)

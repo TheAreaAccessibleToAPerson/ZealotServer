@@ -24,13 +24,15 @@ namespace Zealot.client.agent.tcp
             _client = client;
         }
 
-        public void SetSocket(object socket)
+        public void Start(object socket)
         {
             if (_socket == null)
             {
                 Logger.S_I.To(_client, $"Был получен tcp socket");
 
                 _socket = (Socket)socket;
+
+                _isRunning = true;
             }
             else 
             {
@@ -162,7 +164,7 @@ namespace Zealot.client.agent.tcp
         {
             if (_isRunning)
             {
-                Logger.S_E.To(_client, $"Перед вызовом Close нужно вызвать метод Stop()");
+                Logger.S_E.To(_client, $"{NAME}:Перед вызовом Close нужно вызвать метод Stop()");
 
                 _client.destroy();
 

@@ -1,3 +1,7 @@
+using Butterfly;
+using Butterfly.system.objects.main;
+using MongoDB.Driver.Core.Events;
+
 namespace Zealot.client.agent
 {
     public class State
@@ -5,6 +9,11 @@ namespace Zealot.client.agent
         public const string NAME = "State";
 
         private IClient _client;
+
+        /// <summary>
+        /// Оповести клиента что соединение установленно.
+        /// </summary>
+        public IInput I_connection;
 
         public State(IClient client)
         {
@@ -14,8 +23,6 @@ namespace Zealot.client.agent
         public enum Type
         {
             None,
-
-            LoadingData,
 
             // Ожидаем входящие сообщение поступившее по SSL 
             // соедининения, получить логин и пароль.
@@ -40,6 +47,11 @@ namespace Zealot.client.agent
             /// Соединение установлено. Оповестим об этом клиента.
             /// </summary> <summary>
             Connection,
+
+            /// <summary>
+            /// Загрузим данные для клиента.
+            /// </summary> 
+            LoadingData,
         }
 
         public Type CurrentState { private set; get; } = Type.None;
@@ -50,13 +62,9 @@ namespace Zealot.client.agent
 
             if (CurrentState == Type.None)
             {
-                return LoadingData();
-            }
-            else if (CurrentState == Type.LoadingData)
-            {
                 return WriteInitializeData();
             }
-            else if (CurrentState == Type.WriteInitializeData) 
+            else if (CurrentState == Type.WriteInitializeData)
             {
                 return CreatingWaitTcpConnection();
             }
@@ -68,6 +76,14 @@ namespace Zealot.client.agent
             {
                 return ReceivedTCPKey();
             }
+            else if (CurrentState == Type.ReceivedTCPKey)
+            {
+                return Connection();
+            }
+            else if (CurrentState == Type.Connection)
+            {
+                return LoadingData();
+            }
             else
             {
                 Logger.S_E.To(_client, $"{NAME}:extra call");
@@ -78,27 +94,6 @@ namespace Zealot.client.agent
             }
         }
 
-        private bool LoadingData()
-        {
-            if (CurrentState == Type.None)
-            {
-                Logger.S_I.To(_client, $"{NAME}:change of state {Type.None} -> {Type.LoadingData}");
-
-                CurrentState = Type.LoadingData;
-
-                _client.LoadingData();
-
-                return true;
-            }
-            else
-            {
-                Logger.S_E.To(_client, $"{NAME}:error changing state to {Type.LoadingData}. current state was expected {Type.None}");
-
-                _client.destroy();
-
-                return false;
-            }
-        }
 
         /// <summary>
         /// Данное состояние вызовется в момент когда придет первое сообщение с логином и паролем. 
@@ -106,9 +101,9 @@ namespace Zealot.client.agent
         /// <returns></returns>
         private bool WriteInitializeData()
         {
-            if (CurrentState == Type.LoadingData)
+            if (CurrentState == Type.None)
             {
-                Logger.S_I.To(_client, $"{NAME}:change of state {Type.LoadingData} -> {Type.WriteInitializeData}");
+                Logger.S_I.To(_client, $"{NAME}:change of state {Type.None} -> {Type.WriteInitializeData}");
 
                 CurrentState = Type.WriteInitializeData;
 
@@ -116,7 +111,7 @@ namespace Zealot.client.agent
             }
             else
             {
-                Logger.S_E.To(_client, $"{NAME}:error changing state to {Type.WriteInitializeData}. current state was expected {Type.LoadingData}");
+                Logger.S_E.To(_client, $"{NAME}:error changing state to {Type.WriteInitializeData}. current state was expected {Type.None}");
 
                 _client.destroy();
 
@@ -182,6 +177,57 @@ namespace Zealot.client.agent
 
                 return false;
             }
+        }
+
+        private bool Connection()
+        {
+            if (CurrentState == Type.ReceivedTCPKey)
+            {
+                Logger.S_I.To(_client, $"{NAME}:change of state {Type.ReceivedTCPKey} -> {Type.Connection}");
+
+                CurrentState = Type.Connection;
+
+                I_connection.To();
+
+                Change();
+
+                return true;
+            }
+            else
+            {
+                Logger.S_E.To(_client, $"{NAME}:error changing state to {Type.ReceivedTCPKey}. current state was expected {Type.Connection}");
+
+                _client.destroy();
+
+                return false;
+            }
+        }
+
+        private bool LoadingData()
+        {
+            if (CurrentState == Type.Connection)
+            {
+                Logger.S_I.To(_client, $"{NAME}:change of state {Type.Connection} -> {Type.LoadingData}");
+
+                CurrentState = Type.LoadingData;
+
+                _client.LoadingData();
+
+                return true;
+            }
+            else
+            {
+                Logger.S_E.To(_client, $"{NAME}:error changing state to {Type.LoadingData}. current state was expected {Type.Connection}");
+
+                _client.destroy();
+
+                return false;
+            }
+        }
+
+        public interface IClient : IInformation
+        {
+            public void LoadingData();
         }
     }
 }

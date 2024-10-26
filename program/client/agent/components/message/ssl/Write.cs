@@ -14,8 +14,7 @@ namespace Zealot.client.agent.ssl
 
         private Socket _socket;
 
-        public IInput<byte[]> I_sendSSLBytes;
-        public IInput<byte[]> I_sendTCPBytes;
+        public IInput<byte[]> I_send;
 
         private bool _isRunning = false;
 
@@ -34,14 +33,28 @@ namespace Zealot.client.agent.ssl
         {
             Logger.S_I.To(_client, $"Отправка сообщение с запросом на tcp соединение.");
 
-            I_sendSSLBytes.To(GetHeader(write.Type.REQUEST_TCP_CONNECTOIN, 
+            I_send.To(GetHeader(write.Type.REQUEST_TCP_CONNECTOIN, 
                 JsonSerializer.Serialize(new write.RequestTCPConnection()
             {
                 Key = _client.GetID().ToString()
             })));
         }
 
-        public byte[] GetHeader(int type, string str)
+        public void Connection()
+        {
+            Logger.S_I.To(_client, $"Оповещаем клиента что соединение установлено.");
+
+            I_send.To(GetHeader(write.Type.CONNECTION));
+        }
+
+        public void Disconnection()
+        {
+            Logger.S_I.To(_client, $"Оповещаем клиента что соединение разорвано.");
+
+            Send(GetHeader(write.Type.DISCONNECTION));
+        }
+
+        public byte[] GetHeader(int type, string str = "")
         {
             byte[] buffer = new byte[MessageHeader.LENGHT + str.Length];
 
@@ -163,7 +176,7 @@ namespace Zealot.client.agent.ssl
         {
             if (_isRunning)
             {
-                Logger.S_E.To(_client, $"Перед вызовом Close нужно вызвать метод Stop()");
+                Logger.S_E.To(_client, $"{NAME}:Перед вызовом Close нужно вызвать метод Stop()");
 
                 _client.destroy();
 
